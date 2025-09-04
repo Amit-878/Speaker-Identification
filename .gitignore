@@ -1,0 +1,50 @@
+# --- Python ---
+__pycache__/
+*.py[cod]
+*.so
+*.egg
+*.egg-info/
+dist/
+build/
+.eggs/
+*.log
+
+# --- Virtual Environment ---
+venv/
+.env/
+env/
+.venv/
+
+# --- IDE / Editor ---
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# --- OS Files ---
+.DS_Store
+Thumbs.db
+
+# --- Audio Files (large, don't upload raw meeting recordings) ---
+*.wav
+*.mp3
+*.flac
+*.m4a
+
+# --- Outputs ---
+outputs/*.txt
+outputs/*.wav
+outputs/*.json
+
+# Keep outputs folder structure
+!outputs/.gitkeep
+
+# --- Checkpoints / Models ---
+*.ckpt
+*.pt
+*.pth
+*.onnx
+*.npz
+
+# HuggingFace cache
+~/.cache/huggingface/
