@@ -195,8 +195,3 @@ If you find a bug or want a feature, open an issue.
 
 This project is licensed under the **MIT License** – feel free to use and modify.
 
----
-
-👉 This README makes your repo **look professional** while clearly explaining setup + usage.
-
-Do you want me to also add a **`.gitignore`** (for Python, venv, and large audio/output files), so your repo stays clean?
