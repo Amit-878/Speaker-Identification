@@ -88,7 +88,7 @@ pip install -r requirements.txt
 
 ### 1️⃣ Prepare your audio
 
-* Place your meeting audio file in the project root (e.g., `meeting.wav`).
+* Place your meeting audio file in the project root (e.g., `meeting.wav`) or provide the path when executing the code.
 * Recommended format: `.wav` (16kHz mono for best results).
 
 ### 2️⃣ Add reference speakers
