@@ -1,0 +1,8 @@
+whisperx
+speechbrain
+librosa
+numpy
+soundfile
+scipy
+torch
+transformers
