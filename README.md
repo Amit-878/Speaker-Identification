@@ -106,10 +106,10 @@ Edit `config/references.json`:
 👉 Each key is a **speaker name**, each value is the **path to their sample audio**.
 👉 Sample clips should be at least **10 seconds** for best accuracy.
 
-### 3️⃣ Run transcription + speaker labeling [Make sure to add your audio file in the main directory and mention it in the main.py]
+### 3️⃣ Run transcription + speaker labeling 
 
 ```bash
-python main.py
+python main.py your_audio_file.wav
 ```
 
 ### 4️⃣ View results
