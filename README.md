@@ -45,7 +45,27 @@ speaker-identification/
 │── outputs/
 │   ├── MeetingResult.txt  # Transcript results
 ```
+---
 
+## ⚡ Prerequisites
+
+This project depends on models hosted on **Hugging Face**.  
+Before running the pipeline for the first time, make sure you:
+
+1. **Create a Hugging Face account** (free).  
+   👉 [Sign up here](https://huggingface.co/join)
+
+2. **Generate a User Access Token** from your [settings page](https://huggingface.co/settings/tokens).  
+    replace the following placeholder in main.py.
+
+Accept model licenses:
+Open each model page in your browser and click “Agree and Continue” (one-time only):
+
+WhisperX Alignment Models[https://chatgpt.com/c/68b90f12-bb88-8325-9562-fcb8a6886fec#:~:text=%2D%2D%2D%0A%0A%23%23%20%E2%9A%A1%20Prerequisites%0A%0AThis,manually%20accept%20terms.]
+
+SpeechBrain ECAPA VoxCeleb [https://chatgpt.com/c/68b90f12-bb88-8325-9562-fcb8a6886fec#:~:text=%2D%2D%2D%0A%0A%23%23%20%E2%9A%A1%20Prerequisites%0A%0AThis,manually%20accept%20terms.]
+
+⚠️ If you don’t do this step, the script may pause during execution and ask you to manually accept terms.
 ---
 
 ## ⚙️ Setup Instructions
