@@ -1,7 +1,3 @@
-Got it 🔥 — you’ll want a **professional README** that’s clear for new users, but also shows off the tech behind the project.
-Here’s a **ready-to-use README.md** you can drop into your repo:
-
----
 
 # 🎙️ Speaker Identification with WhisperX + SpeechBrain
 
