@@ -210,10 +210,21 @@ outputs/MeetingResult.txt
 
 ---
 
+## 🚧 Roadmap
+
+- [ ] Add support for MP3 input  
+- [ ] Export transcripts to Word/Excel/JSON  
+- [ ] Build a simple web UI  
+- [ ] Support real-time transcription  
+
+---
+
 ## 🤝 Contributing
 
 Pull requests are welcome!
 If you find a bug or want a feature, open an issue.
+If you find this project useful, please consider giving it a star 🌟 on GitHub!  
+It helps others discover the project and keeps me motivated.
 
 ---
 
