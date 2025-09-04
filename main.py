@@ -57,7 +57,7 @@ def main():
             text = segment.get("text", "").strip()
             txt.write(f"[{speaker_name}]: {text}\n")
 
-    print(f"✅ Speaker-labeled transcript saved at {RESULT_FILE}")
+    print(f"Speaker-labeled transcript saved at {RESULT_FILE}")
 
 if __name__ == "__main__":
     main()
