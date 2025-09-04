@@ -95,6 +95,8 @@ pip install -r requirements.txt
 
 Edit `config/references.json`:
 
+Add the refrence speaker audio file to 'refs/' folder and update the json as below:
+
 ```json
 {
   "Amit": "refs/amit.wav",
