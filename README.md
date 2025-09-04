@@ -35,6 +35,8 @@ speaker-identification/
 │── main.py                # Entry point
 │── requirements.txt       # Dependencies
 │── README.md              # Documentation
+│── refs/
+│   └── ref_audio.wav      # Reference Audio Files
 │── config/
 │   └── references.json    # Reference speakers and their audio
 │── utils/
