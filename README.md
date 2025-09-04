@@ -106,7 +106,7 @@ Edit `config/references.json`:
 👉 Each key is a **speaker name**, each value is the **path to their sample audio**.
 👉 Sample clips should be at least **10 seconds** for best accuracy.
 
-### 3️⃣ Run transcription + speaker labeling
+### 3️⃣ Run transcription + speaker labeling [Make sure to add your audio file in the main directory and mention it in the main.py]
 
 ```bash
 python main.py
@@ -144,7 +144,7 @@ outputs/MeetingResult.txt
 
 ## 🛠️ Example Workflow
 
-1. Input: `meeting.wav`
+1. Input: `meeting.wav` in the base directory.
 2. WhisperX → Transcribe + align words
 3. Diarization → Split speakers
 4. Speaker verification → Match with reference audios
