@@ -1,5 +1,10 @@
-
 # 🎙️ Speaker Identification with WhisperX + SpeechBrain
+
+[![Python](https://img.shields.io/badge/Python-3.9%2B-blue?logo=python&logoColor=white)](https://www.python.org/)
+[![WhisperX](https://img.shields.io/badge/WhisperX-Transcription-orange?logo=openai&logoColor=white)](https://github.com/m-bain/whisperx)
+[![SpeechBrain](https://img.shields.io/badge/SpeechBrain-Speaker%20Verification-green)](https://huggingface.co/speechbrain/spkrec-ecapa-voxceleb)
+[![HuggingFace](https://img.shields.io/badge/Models-HuggingFace-yellow?logo=huggingface&logoColor=white)](https://huggingface.co)
+[![License](https://img.shields.io/badge/License-MIT-lightgrey)](LICENSE)
 
 Automatically transcribe meetings and assign **real speaker names** using reference audio files.
 This project combines:
