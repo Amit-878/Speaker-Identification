@@ -7,9 +7,6 @@
 [![License](https://img.shields.io/badge/License-MIT-lightgrey)](LICENSE)
 
 
-[![Python Application](https://github.com/your-username/your-repo/actions/workflows/python-app.yml/badge.svg)](https://github.com/your-username/your-repo/actions/workflows/python-app.yml)
-
-
 Automatically transcribe meetings and assign **real speaker names** using reference audio files.
 This project combines:
 
