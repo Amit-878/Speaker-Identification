@@ -61,9 +61,9 @@ Before running the pipeline for the first time, make sure you:
 Accept model licenses:
 Open each model page in your browser and click “Agree and Continue” (one-time only):
 
-WhisperX Alignment Models[https://chatgpt.com/c/68b90f12-bb88-8325-9562-fcb8a6886fec#:~:text=%2D%2D%2D%0A%0A%23%23%20%E2%9A%A1%20Prerequisites%0A%0AThis,manually%20accept%20terms.]
+WhisperX Alignment Models[https://huggingface.co/openai/whisper-large-v3]
 
-SpeechBrain ECAPA VoxCeleb [https://chatgpt.com/c/68b90f12-bb88-8325-9562-fcb8a6886fec#:~:text=%2D%2D%2D%0A%0A%23%23%20%E2%9A%A1%20Prerequisites%0A%0AThis,manually%20accept%20terms.]
+SpeechBrain ECAPA VoxCeleb [https://huggingface.co/speechbrain/spkrec-ecapa-voxceleb?]
 
 ⚠️ If you don’t do this step, the script may pause during execution and ask you to manually accept terms.
 ---
