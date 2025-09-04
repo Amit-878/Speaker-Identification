@@ -7,6 +7,11 @@
 [![License](https://img.shields.io/badge/License-MIT-lightgrey)](LICENSE)
 
 
+![Status](https://img.shields.io/badge/Status-Active-success?style=for-the-badge&logo=github)
+![Contributions](https://img.shields.io/badge/Contributions-Welcome-blue?style=for-the-badge&logo=github)
+
+
+
 Automatically transcribe meetings and assign **real speaker names** using reference audio files.
 This project combines:
 
