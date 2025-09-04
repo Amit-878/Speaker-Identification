@@ -6,6 +6,14 @@
 [![HuggingFace](https://img.shields.io/badge/Models-HuggingFace-yellow?logo=huggingface&logoColor=white)](https://huggingface.co)
 [![License](https://img.shields.io/badge/License-MIT-lightgrey)](LICENSE)
 
+
+![header](https://capsule-render.vercel.app/api?type=waving&color=gradient&height=200&section=header&text=Meeting+Transcriber&fontSize=40&fontAlignY=35&desc=WhisperX+%2B+SpeechBrain&descAlignY=55&animation=fadeIn)
+
+
+[![Typing SVG](https://readme-typing-svg.herokuapp.com?font=Fira+Code&duration=3000&pause=1000&color=F77D26&center=true&vCenter=true&width=435&lines=🎙️+Meeting+Transcription;👥+Speaker+Diarization;🗣️+Custom+Speaker+Labels)](https://git.io/typing-svg)
+
+
+
 Automatically transcribe meetings and assign **real speaker names** using reference audio files.
 This project combines:
 
