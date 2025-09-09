@@ -117,11 +117,11 @@ Create `.env` in the root directory:
 
 ```env
 HF_TOKEN=your_hf_token_here
-WHISPER_MODEL=large-v2
-WHISPER_LANGUAGE=en
-WHISPER_DEVICE=cpu
-WHISPER_COMPUTE=int8
-SIMILARITY_THRESHOLD=0.37
+WHISPER_MODEL=large-v2     # options: tiny, base, small, medium, large-v1, large-v2
+WHISPER_LANGUAGE=en        # language code for transcription & diarization (e.g., en, fr, de, es, it, ja, zh) [English, French, German, Spanish, Italian, Japanese, Chinese, Dutch, Ukrainian, and Portuguese]
+WHISPER_DEVICE=cpu         # options: cpu, cuda, mps [use cuda if GPU available, use mps if working on mac]
+WHISPER_COMPUTE=int8       # options: int8, float16, float32
+SIMILARITY_THRESHOLD=0.37  # Similarity threshold used for speaker matching
 ```
 
 > These settings are now **dynamic**, so you can change the model, device, or threshold without modifying `main.py`.
