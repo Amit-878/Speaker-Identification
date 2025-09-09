@@ -135,7 +135,7 @@ source venv/bin/activate
 ```bash
 pip install -r requirements.txt
 ```
-
+OR 
 ```if pip is not defined
 py -m pip install -r requirements.txt
 ```
