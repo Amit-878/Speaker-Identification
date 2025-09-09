@@ -1,8 +1,11 @@
+# Core
+torch>=2.0.0
 whisperx
 speechbrain
 librosa
-numpy
 soundfile
-scipy
-torch
-transformers
+numpy
+python-dotenv
+
+# optional niceties
+tqdm
