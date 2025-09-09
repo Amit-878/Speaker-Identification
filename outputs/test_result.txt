@@ -1,0 +1,6 @@
+[Unknown]: how we are going to improve on this.
+[Veer]: We will see that how accurate we can provide the sample, voice sample so we can get at least 90% accurate transcript which we can feed later in our agents to identify action items.
+[Unknown]: What's your thought on this?
+[Amit]: So currently model is working pretty fine and we have used multiple versions such as tiny, large and all.
+[Amit]: And also, I'm using another version, which is voxel above speech brain to diarize the data.
+[Unknown]: Okay, thank you.
