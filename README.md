@@ -78,21 +78,17 @@ This project depends on models hosted on **Hugging Face**, and **FFmpeg** for au
    * On Windows, if `python` command fails, try `py -3.11`
    * [Download Python 3.11](https://www.python.org/downloads/release/python-311x/)
 
-2. **Install PyTorch**
-
-   * [PyTorch Installation Guide](https://pytorch.org/get-started/locally/)
-
-3. **Install FFmpeg (full version)**
+2. **Install FFmpeg (full version)**
 
    * Download from [Gyan.dev FFmpeg Builds](https://www.gyan.dev/ffmpeg/builds/)
    * Extract and add the `bin` folder to your **PATH**
    * Verify installation: `ffmpeg -version`
 
-4. **Create a Hugging Face account** → [Sign up here](https://huggingface.co/join)
+3. **Create a Hugging Face account** → [Sign up here](https://huggingface.co/join)
 
-5. **Generate a User Access Token** → [settings/tokens](https://huggingface.co/settings/tokens)
+4. **Generate a User Access Token** → [settings/tokens](https://huggingface.co/settings/tokens)
 
-6. Accept model licenses (one-time):
+5. Accept model licenses (one-time):
 
    * WhisperX alignment models: [https://huggingface.co/openai/whisper-large-v3](https://huggingface.co/openai/whisper-large-v3)
    * SpeechBrain ECAPA VoxCeleb: [https://huggingface.co/speechbrain/spkrec-ecapa-voxceleb](https://huggingface.co/speechbrain/spkrec-ecapa-voxceleb)
