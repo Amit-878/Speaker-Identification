@@ -1,63 +1,52 @@
-import whisperx
-import json
+"""
+Entry point for the Speaker-Identification pipeline.
+
+Usage:
+    python main.py <audio_file>
+
+Only an audio path is required. All runtime settings (HF token, Whisper model,
+language, device, compute type, threshold) are read from the .env file via config.py.
+"""
+import sys
 import os
-from utils.speaker_utils import SpeakerUtils
-from utils.audio_utils import extract_segment, ensure_dir
+from dotenv import load_dotenv
 
-# Config
-AUDIO_FILE = "meeting2sepconverted.wav"
-OUTPUT_DIR = "outputs/Meeting_output2Sep_4"
-RESULT_FILE = os.path.join("outputs", "MeetingResult2sep_4.txt")
-MODEL_NAME = "base"
-DEVICE = "cpu"
-COMPUTE_TYPE = "int8"
-HF_TOKEN = "your_hf_token_here"  # replace with your HuggingFace token
+# load env first so config.py can read environment variables
+load_dotenv()
 
-def load_references(config_path="config/references.json"):
-    with open(config_path, "r") as f:
-        return json.load(f)
+from config import (
+    HF_TOKEN, WHISPER_MODEL, WHISPER_LANGUAGE, WHISPER_DEVICE, WHISPER_COMPUTE,
+    SIMILARITY_THRESHOLD
+)
+from src.pipeline import run_pipeline
+
+def print_usage():
+    print("Usage: python main.py <audio_file>")
+    print("Example: python main.py meeting.m4a")
 
 def main():
-    ensure_dir(OUTPUT_DIR)
+    if len(sys.argv) < 2:
+        print("Error: missing audio file path.")
+        print_usage()
+        sys.exit(1)
 
-    # Load references
-    reference_files = load_references()
+    input_path = sys.argv[1]
+    if not os.path.exists(input_path):
+        print(f"Error: file not found: {input_path}")
+        sys.exit(1)
 
-    # Load WhisperX model
-    model = whisperx.load_model(MODEL_NAME, DEVICE, compute_type=COMPUTE_TYPE)
-    audio = whisperx.load_audio(AUDIO_FILE)
-    result = model.transcribe(audio, batch_size=16)
-
-    # Alignment
-    align_model, metadata = whisperx.load_align_model(language_code=result['language'], device=DEVICE)
-    result = whisperx.align(result["segments"], align_model, metadata, audio, DEVICE)
-
-    # Diarization
-    diarize_model = whisperx.diarize.DiarizationPipeline(use_auth_token=HF_TOKEN, device=DEVICE)
-    diarize_segments = diarize_model(audio)
-    result = whisperx.assign_word_speakers(diarize_segments, result)
-
-    # Speaker utils
-    speaker_utils = SpeakerUtils()
-
-    # Write results
-    with open(RESULT_FILE, "w", encoding="utf-8") as txt:
-        for i, segment in enumerate(result["segments"]):
-            start = segment["start"]
-            end = segment["end"]
-            segment_path = os.path.join(OUTPUT_DIR, f"segment_{i}.wav")
-
-            # Extract segment
-            extract_segment(AUDIO_FILE, start, end, segment_path)
-
-            # Match speaker
-            speaker_name = speaker_utils.get_speaker_name(segment_path, reference_files)
-
-            # Write transcript
-            text = segment.get("text", "").strip()
-            txt.write(f"[{speaker_name}]: {text}\n")
-
-    print(f"Speaker-labeled transcript saved at {RESULT_FILE}")
+    # config options (read from .env via config.py)
+    run_pipeline(
+        input_path=input_path,
+        ref_config_path=os.path.join("config", "references.json"),
+        output_dir="outputs",
+        hf_token=HF_TOKEN,
+        model_name=WHISPER_MODEL,
+        language=WHISPER_LANGUAGE,
+        device=WHISPER_DEVICE,
+        compute_type=WHISPER_COMPUTE,
+        similarity_threshold=float(SIMILARITY_THRESHOLD)
+    )
 
 if __name__ == "__main__":
     main()
