@@ -76,7 +76,8 @@ This project depends on models hosted on **Hugging Face**, and **FFmpeg** for au
 1. **Install Python 3.11**
 
    * On Windows, if `python` command fails, try `py -3.11`
-   * [Download Python 3.11](https://www.python.org/downloads/release/python-311x/)
+   *   * <a href="https://www.python.org/downloads/release/python-3110/" target="_blank">Download Python 3.11</a>
+
 
 2. **Install FFmpeg (full version)**
 
